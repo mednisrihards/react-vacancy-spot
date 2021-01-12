@@ -1,0 +1,34 @@
+type Query {
+    getVacancy(id: Int): Vacancy
+    getVacancies(type: String): [Vacancy]!
+    getVacanciesByCountry(country: String): [Vacancy]
+    getUser(email: String!): User
+}
+
+type Vacancy {
+    vacancy_id: Int
+    vacancy_title: String
+    vacancy_position: String
+    vacancy_description: String
+    vacancy_created_at: String
+    vacancy_category_id: String
+    vacancy_category_title: String
+    vacancy_image: String
+    vacancy_car: String
+    vacancy_latitude: Float
+    vacancy_longitude: Float
+    vacancy_country: String
+}
+
+type User {
+    user_id: Int
+    user_role_id: Int
+    user_email: String
+    user_password: String
+    user_image: String
+    user_first_name: String
+    user_last_name: String
+    user_personal_code: String
+    user_phone: String
+    user_driving_licence: Int
+}

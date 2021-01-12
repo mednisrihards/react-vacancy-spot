@@ -1,0 +1,45 @@
+.masonry-post {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    min-height: 280px;
+    height: 100%;
+
+    .post-text {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+    }
+
+    .post-title,
+    .post-date,
+    .tags-container {
+        float: left;
+        width: 100%;
+    }
+    
+    .post-date {
+        color: $background-color;
+    }
+
+    .post-title {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .masonry-post {
+        margin-bottom: 30px;
+    }
+}

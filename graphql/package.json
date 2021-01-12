@@ -1,0 +1,24 @@
+{
+  "name": "react-tour-blog-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "create-migration": "node ./database/actions/create-migrations.js",
+    "run-migrations": "node ./database/actions/run-migrations.js",
+    "deploy": "forever start --minUptime 2000 --spinSleepTime 5 app.js"
+  },
+  "author": "Rihards Mednis",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-koa": "^2.19.1",
+    "bluebird": "^3.7.2",
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^7.0.2",
+    "knex": "^0.21.15",
+    "koa": "^2.13.1",
+    "mysql2": "^2.2.5"
+  }
+}

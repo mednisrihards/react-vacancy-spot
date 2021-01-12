@@ -1,0 +1,45 @@
+.places {
+    width: 100vw;
+    .mapboxgl-ctrl-bottom-right,
+    .mapboxgl-ctrl-bottom-left {
+        display: none;
+    }
+
+    .tooltip {
+        width: 200px;
+        height: 200px;
+        background-color:white;
+        display: flex;
+        align-items: flex-end;
+        padding: 10px;
+        background-position: center;
+        background-size: cover;
+
+        .title {
+            color: white;
+            z-index: 3;
+        }
+    }
+
+    .location-btns {
+        margin: auto auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        flex-wrap: wrap;
+
+        .location-btn {
+            color: white;
+            font-weight: 600;
+            font-size: 1em;
+            margin: 10px 10px;
+            background-color: $text-color;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 2px 20px;
+            cursor: pointer;
+        }
+    }
+}
